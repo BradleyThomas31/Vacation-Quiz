@@ -1,0 +1,22 @@
+#intro{
+    text-align: center;
+    font-size: 24px;
+}
+#firstButton, #secondButton{
+    width: 40%;
+    height: 30%;
+    margin-top: 10%;
+    margin-left: 5%;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#firstButton:hover, #secondButton:hover {
+    text-decoration: underline; 
+    background-color: rgb(115, 115, 115);
+}
+div{
+    background-color: darkblue;
+    color: white;
+    height: 100%;
+}

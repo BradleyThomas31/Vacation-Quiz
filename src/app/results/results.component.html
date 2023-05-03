@@ -1,0 +1,22 @@
+<div class="text">
+  <div [ngSwitch]="destinationNum" id="youGot">
+    <ng-container *ngSwitchCase="0">You got {{ places[0] }}!</ng-container>
+    <ng-container *ngSwitchCase="1">You got {{ places[1] }}!</ng-container>
+    <ng-container *ngSwitchCase="2">You got {{ places[2] }}!</ng-container>
+    <ng-container *ngSwitchCase="3">You got {{ places[3] }}!</ng-container>
+  </div>
+  
+  <div [ngSwitch]="destinationNum">
+    <ng-container *ngSwitchCase="0">{{ descriptions[0] }}</ng-container>
+    <ng-container *ngSwitchCase="1">{{ descriptions[1] }}</ng-container>
+    <ng-container *ngSwitchCase="2">{{ descriptions[2] }}</ng-container>
+    <ng-container *ngSwitchCase="3">{{ descriptions[3] }}</ng-container>
+  </div>
+</div>
+
+<div class="pic">
+  <img [src]="images[destinationNum]" alt="your-image-description">
+</div>
+
+<button id="firstButton" routerLink="/home">Go Home</button>
+<button id="secondButton" routerLink="/research">Research this Destination</button>

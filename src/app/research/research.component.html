@@ -1,0 +1,61 @@
+<br>
+<p id="linksHeader">Helpful Links</p>
+<br>
+<section>
+<div [ngSwitch]="destinationNum">
+    <ng-container *ngSwitchCase="0"><a href={{restaurants[0]}}>Restaurant Recommendations</a></ng-container>
+    <ng-container *ngSwitchCase="1"><a href={{restaurants[1]}}>Restaurant Recommendations</a></ng-container>
+    <ng-container *ngSwitchCase="2"><a href={{restaurants[2]}}>Restaurant Recommendations</a></ng-container>
+    <ng-container *ngSwitchCase="3"><a href={{restaurants[3]}}>Restaurant Recommendations</a></ng-container>
+</div>
+<br>
+<div [ngSwitch]="destinationNum">
+    <ng-container *ngSwitchCase="0"><a href={{history[0]}}>Learn the History</a></ng-container>
+    <ng-container *ngSwitchCase="1"><a href={{history[1]}}>Learn the History</a></ng-container>
+    <ng-container *ngSwitchCase="2"><a href={{history[2]}}>Learn the History</a></ng-container>
+    <ng-container *ngSwitchCase="3"><a href={{history[3]}}>Learn the History</a></ng-container>
+</div>
+<br>
+<div [ngSwitch]="destinationNum">
+    <ng-container *ngSwitchCase="0"><a href={{liveMusic[0]}}>Live Music Options</a></ng-container>
+    <ng-container *ngSwitchCase="1"><a href={{liveMusic[1]}}>Live Music Options</a></ng-container>
+    <ng-container *ngSwitchCase="2"><a href={{liveMusic[2]}}>Live Music Options</a></ng-container>
+    <ng-container *ngSwitchCase="3"><a href={{liveMusic[3]}}>Live Music Options</a></ng-container>
+</div>
+<br>
+<div [ngSwitch]="destinationNum">
+    <ng-container *ngSwitchCase="0"><a href={{thingsToDo[0]}}>Things to Do</a></ng-container>
+    <ng-container *ngSwitchCase="1"><a href={{thingsToDo[1]}}>Things to Do</a></ng-container>
+    <ng-container *ngSwitchCase="2"><a href={{thingsToDo[2]}}>Things to Do</a></ng-container>
+    <ng-container *ngSwitchCase="3"><a href={{thingsToDo[3]}}>Things to Do</a></ng-container>
+</div>
+</section>
+<br>
+<div class="button">
+    <button routerLink="/home">Go Home</button>
+</div>
+<br>
+<div class="pics">
+<div [ngSwitch]="destinationNum">
+    <ng-container *ngSwitchCase="0"><>
+        <img [src]="nycPics[0]" alt="pasta">
+        <img [src]="nycPics[1]" alt="city street">
+        <img [src]="nycPics[2]" alt="concert">
+    </ng-container>
+    <ng-container *ngSwitchCase="1">
+        <img [src]="montanaPics[0]" alt="steak">
+        <img [src]="montanaPics[1]" alt="stars">
+        <img [src]="montanaPics[2]" alt="hike">
+    </ng-container>
+    <ng-container *ngSwitchCase="2">
+        <img [src]="newOrleansPics[0]" alt="seafood">
+        <img [src]="newOrleansPics[1]" alt="city street">
+        <img [src]="newOrleansPics[2]" alt="bar">
+    </ng-container>
+    <ng-container *ngSwitchCase="3">
+        <img [src]="miamiPics[0]" alt="cuban dish">
+        <img [src]="miamiPics[1]" alt="palm trees at night">
+        <img [src]="miamiPics[2]" alt="a beach">
+    </ng-container>
+</div>
+</div>

@@ -1,0 +1,40 @@
+<h1>Completed: {{ questionNumber }} / 3</h1>
+<h2>{{questions[questionNumber]}}</h2>
+
+<mat-card id="questions" *ngIf="questionNumber < 3">
+  <mat-card-content>
+    <form>
+      <section id="top">
+      <section id="q1">
+        <button type="button" (click)="onNext(1)">
+          <img [src]="q1Images[questionNumber]" alt="fo">
+        </button>
+      </section>
+      <section id="q2">
+        <button type="button" (click)="onNext(2)">
+          <img [src]="q2Images[questionNumber]" alt= {{q2Text[questionNumber]}}>
+        </button>
+      </section>
+    </section>
+    <section id="bottom">
+      <section id="q3">
+        <button type="button" (click)="onNext(3)">
+          <img [src]="q3Images[questionNumber]" alt="third image, for new orleans">
+        </button>
+      </section>
+      <section id="q4">
+        <button type="button" (click)="onNext(4)">
+          <img [src]="q4Images[questionNumber]" alt="fourth image, for miami">
+        </button>
+      </section>
+    </section>
+      </form>
+    </mat-card-content>
+  </mat-card>
+<br>
+
+<mat-card id="endButtons" *ngIf="questionNumber == 3">
+ <img src="https://thumbs.dreamstime.com/b/congratulations-banner-colorful-splash-stock-vector-congratulations-banner-colorful-splash-vector-157999321.jpg" alt="Congragulations">
+ <button id="firstButton" routerLink="/results">See Results</button>
+</mat-card>
+

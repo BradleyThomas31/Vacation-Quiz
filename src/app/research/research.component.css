@@ -1,0 +1,39 @@
+#linksHeader{
+  font-size: x-large;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+  width: 47.5%;
+  height: 10%;
+  padding: 1%;
+  background-color: gray;
+  cursor: pointer;
+  border-radius: 10px;
+}
+button:hover {
+    text-decoration: underline;
+    background-color: rgb(115, 115, 115);
+    cursor: pointer;
+  }
+section, a, p{
+    color:white;
+    text-align: center;
+    font-size: medium;
+}
+.pics {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-left: 2.5%;
+}
+
+img {
+  width: 30%;
+  height: 400px;
+}
+
